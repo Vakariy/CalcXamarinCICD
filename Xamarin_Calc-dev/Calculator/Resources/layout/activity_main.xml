@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <HorizontalScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#333">
+        <TextView
+            android:id="@+id/input"
+            android:padding="10dp"
+            android:textSize="36sp"
+            android:textColor="#aaa"
+            android:text="0"
+            android:layout_gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </TextView>
+    </HorizontalScrollView>
+    <android.support.v7.widget.GridLayout
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#222"
+        android:orientation="horizontal"
+        app:rowCount="5"
+        app:columnCount="4">
+        <!-- DEL button -->
+        <Button
+            style="@style/AppTheme"
+            android:text="DEL"
+            app:layout_columnSpan="3"
+            />
+        <!-- DIVIDE / -->
+        <Button
+            style="@style/AppTheme"
+            android:text="/"
+            app:layout_columnSpan="1"
+            />
+        <!-- SEVEN 7 -->
+        <Button
+            style="@style/AppTheme"
+            android:text="7"
+            app:layout_columnSpan="1"
+            />
+        <!-- EIGHT 8 -->
+        <Button
+            style="@style/AppTheme"
+            android:text="8"
+            app:layout_columnSpan="1"
+            />
+        <!-- NINE 9 -->
+        <Button
+            style="@style/AppTheme"
+            android:text="9"
+            app:layout_columnSpan="1"
+            />
+        <!-- PRODUCT * -->
+        <Button
+            style="@style/AppTheme"
+            android:text="*"
+            app:layout_columnSpan="1"
+            />
+        <!-- FOUR 4 -->
+        <Button
+            style="@style/AppTheme"
+            android:text="4"
+            app:layout_columnSpan="1"
+            />
+        <!-- FIVE 5 -->
+        <Button
+            style="@style/AppTheme"
+            android:text="5"
+            app:layout_columnSpan="1"
+            />
+        <!-- SIX 6 -->
+        <Button
+            style="@style/AppTheme"
+            android:text="6"
+            app:layout_columnSpan="1"
+            />
+        <!-- MINUS - -->
+        <Button
+            style="@style/AppTheme"
+            android:text="-"
+            app:layout_columnSpan="1"
+            />
+        <!-- ONE 1 -->
+        <Button
+            style="@style/AppTheme"
+            android:text="1"
+            app:layout_columnSpan="1"
+            />
+        <!-- TWO 2 = -->
+        <Button
+            style="@style/AppTheme"
+            android:text="2"
+            app:layout_columnSpan="1"
+            />
+        <!-- THREE 3 -->
+        <Button
+            style="@style/AppTheme"
+            android:text="3"
+            app:layout_columnSpan="1"
+            />
+        <!-- PLUS + -->
+        <Button
+            style="@style/AppTheme"
+            android:text="+"
+            app:layout_columnSpan="1"
+            />
+        <!-- COMMA . -->
+        <Button
+            style="@style/AppTheme"
+            android:text="."
+            app:layout_columnSpan="1"
+            />
+        <!-- ZERO 0 -->
+        <Button
+            style="@style/AppTheme"
+            android:text="0"
+            app:layout_columnSpan="1"
+            />
+        <!-- EQUAL = -->
+        <Button
+            style="@style/AppTheme"
+            android:text="="
+            app:layout_columnSpan="2"
+            />
+    </android.support.v7.widget.GridLayout>
+</LinearLayout>
